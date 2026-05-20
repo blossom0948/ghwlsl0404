@@ -43,25 +43,25 @@ export function Navbar() {
               href="#features"
               className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
             >
-              기능
+              Features
             </Link>
             <Link
               href="#pricing"
               className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
             >
-              가격
+              Pricing
             </Link>
             <Link
               href="#contact"
               className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
             >
-              연락
+              Contact
             </Link>
           </div>
 
           {/* Get Started Button */}
           <Button className="w-fit">
-            <a href="#hero">시작하기</a>
+            <a href="#hero">Get Started</a>
           </Button>
         </div>
       </div>
