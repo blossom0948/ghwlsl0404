@@ -26,13 +26,13 @@ const SnailLogoSVG = () => (
 
 export function Navbar() {
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-gray-200/20 dark:border-white/10">
+    <nav className="fixed top-0 w-full z-50 bg-transparent border-b border-transparent">
       <div className="max-w-7xl mx-auto px-6 py-4 md:px-8">
         <div className="flex items-center justify-between">
           {/* Logo + Text */}
           <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <SnailLogoSVG />
-            <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-xl font-bold text-black dark:text-white">
               Snail.AI
             </span>
           </Link>
@@ -43,25 +43,25 @@ export function Navbar() {
               href="#features"
               className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
             >
-              Features
+              기능
             </Link>
             <Link
               href="#pricing"
               className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
             >
-              Pricing
+              가격
             </Link>
             <Link
               href="#contact"
               className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
             >
-              Contact
+              연락
             </Link>
           </div>
 
           {/* Get Started Button */}
           <Button className="w-fit">
-            <a href="#hero">Get Started</a>
+            <a href="#hero">시작하기</a>
           </Button>
         </div>
       </div>

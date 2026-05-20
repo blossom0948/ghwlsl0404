@@ -25,10 +25,10 @@ const ChevronRightSVG = () => (
 )
 
 export function Hero({
-  eyebrow = "AI-Powered Thumbnails",
+  eyebrow = "AI-Powered Thumbnail Generator",
   title,
   subtitle,
-  ctaLabel = "Start Creating",
+  ctaLabel = "Start Creating Now",
   ctaHref = "#",
 }: HeroProps) {
   return (
