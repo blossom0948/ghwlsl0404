@@ -61,7 +61,7 @@ export function Navbar() {
 
           {/* Get Started Button */}
           <Button className="w-fit">
-            <a href="#hero">Get Started</a>
+            <a href="/auth">Get Started</a>
           </Button>
         </div>
       </div>
