@@ -55,15 +55,14 @@ export function Hero({
         h-[500px] w-[700px] md:h-[500px] md:w-[1100px] lg:h-[750px] lg:w-[140%] 
         -translate-x-1/2 rounded-[100%] border-[#B48CDE] bg-white dark:bg-black 
         bg-[radial-gradient(closest-side,#fff_82%,#000000)] 
-        dark:bg-[radial-gradient(closest-side,#000_82%,#ffffff)] 
-        animate-fade-up"
+        dark:bg-[radial-gradient(closest-side,#000_82%,#ffffff)]"
       />
 
       {/* Eyebrow */}
       {eyebrow && (
-        <a href="#" className="group">
+        <a href="#" className="group inline-block mb-6">
           <span
-            className="text-sm text-gray-600 dark:text-gray-400 font-geist mx-auto px-5 py-2 
+            className="text-sm text-gray-600 dark:text-gray-400 mx-auto px-5 py-2 
             bg-gradient-to-tr from-zinc-300/5 via-gray-400/5 to-transparent  
             border-[2px] border-gray-300/20 dark:border-white/5 
             rounded-3xl w-fit tracking-tight uppercase flex items-center justify-center"
@@ -76,10 +75,10 @@ export function Hero({
 
       {/* Title */}
       <h1
-        className="animate-fade-in -translate-y-4 text-balance 
+        className="text-balance 
         bg-gradient-to-br from-black from-30% to-black/40 
         bg-clip-text py-6 text-5xl font-semibold leading-none tracking-tighter 
-        text-transparent opacity-0 sm:text-6xl md:text-7xl lg:text-8xl 
+        text-transparent sm:text-6xl md:text-7xl lg:text-8xl 
         dark:from-white dark:to-white/40"
       >
         {title}
@@ -87,9 +86,9 @@ export function Hero({
 
       {/* Subtitle */}
       <p
-        className="animate-fade-in mb-12 -translate-y-4 text-balance 
+        className="mb-12 text-balance 
         text-lg tracking-tight text-gray-600 dark:text-gray-400 
-        opacity-0 md:text-xl"
+        md:text-xl"
       >
         {subtitle}
       </p>
@@ -99,7 +98,7 @@ export function Hero({
         <div className="flex justify-center">
           <Button
             asChild
-            className="mt-[-20px] w-fit md:w-52 z-20 font-geist tracking-tighter text-center text-lg"
+            className="mt-4 w-fit md:w-52 z-20 tracking-tighter text-center text-lg"
           >
             <a href={ctaHref}>{ctaLabel}</a>
           </Button>
@@ -108,7 +107,7 @@ export function Hero({
 
       {/* Bottom Fade */}
       <div
-        className="animate-fade-up relative mt-32 opacity-0 [perspective:2000px] 
+        className="relative mt-32 [perspective:2000px] 
         after:absolute after:inset-0 after:z-50 
         after:[background:linear-gradient(to_top,hsl(var(--background))_10%,transparent)]"
       />
