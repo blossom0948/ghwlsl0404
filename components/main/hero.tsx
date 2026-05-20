@@ -55,7 +55,7 @@ export function Hero({
         h-[500px] w-[700px] md:h-[500px] md:w-[1100px] lg:h-[750px] lg:w-[140%] 
         -translate-x-1/2 rounded-[100%] border-[#B48CDE] bg-white dark:bg-black 
         bg-[radial-gradient(closest-side,#fff_82%,#000000)] 
-        dark:bg-[radial-gradient(closest-side,#000_82%,#ffffff)]"
+        dark:bg-[radial-gradient(closest-side,#000_82%,#ffffff)] backdrop-blur-3xl opacity-60"
       />
 
       {/* Eyebrow */}

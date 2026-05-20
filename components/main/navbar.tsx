@@ -26,7 +26,7 @@ const SnailLogoSVG = () => (
 
 export function Navbar() {
   return (
-    <nav className="fixed top-0 w-full z-50 bg-transparent border-b border-transparent">
+    <nav className="fixed top-0 w-full z-50 bg-white/40 dark:bg-black/40 backdrop-blur-2xl border-b border-white/20 dark:border-white/10 shadow-lg animate-fade-in-up">
       <div className="max-w-7xl mx-auto px-6 py-4 md:px-8">
         <div className="flex items-center justify-between">
           {/* Logo + Text */}

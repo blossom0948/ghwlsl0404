@@ -11,7 +11,7 @@ export function Button({
   ...props
 }: ButtonProps & { children?: React.ReactNode }) {
   const baseStyles =
-    "inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-3 font-semibold text-white transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95"
+    "inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-3 font-semibold text-white transition-all duration-300 hover:shadow-2xl hover:scale-110 active:scale-95"
 
   const combinedClassName = `${baseStyles} ${className}`
 

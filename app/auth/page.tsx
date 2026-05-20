@@ -36,10 +36,17 @@ const GoogleLogoSVG = () => (
 
 export default function AuthPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center px-6 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-black">
+    <div className="min-h-screen flex items-center justify-center px-6 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-gray-900 dark:via-blue-900 dark:to-black page-transition relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-300 dark:bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-purple-300 dark:bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div className="absolute -bottom-8 left-1/3 w-96 h-96 bg-pink-300 dark:bg-pink-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+      </div>
+
       <div className="w-full max-w-md">
-        {/* Card */}
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 md:p-12">
+        {/* Card with Glassmorphism */}
+        <div className="bg-white/30 dark:bg-gray-800/30 backdrop-blur-3xl rounded-3xl shadow-2xl p-8 md:p-12 border border-white/40 dark:border-white/10 animate-slide-in">
           {/* Header */}
           <div className="text-center mb-8">
             <h1 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-2">
@@ -63,9 +70,9 @@ export default function AuthPage() {
           </div>
 
           {/* Google Login Button */}
-          <button className="w-full flex items-center justify-center gap-3 px-6 py-3 rounded-lg border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors mb-6">
+          <button className="w-full flex items-center justify-center gap-3 px-6 py-3 rounded-xl bg-white/50 dark:bg-white/10 backdrop-blur-xl border border-white/40 dark:border-white/20 hover:bg-white/60 dark:hover:bg-white/20 transition-all duration-300 mb-6 hover:shadow-lg hover:scale-105 active:scale-95">
             <GoogleLogoSVG />
-            <span className="text-gray-700 dark:text-gray-300 font-medium">
+            <span className="text-gray-900 dark:text-gray-100 font-semibold">
               Google로 로그인
             </span>
           </button>
